@@ -1,0 +1,2 @@
+man=$(pwd)
+echo "ds : $man"
