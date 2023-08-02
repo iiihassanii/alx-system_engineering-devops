@@ -1,3 +1,2 @@
 #!/bin/bash
-man=$(pwd)
-echo "ds : $man"
+echo $pwd
