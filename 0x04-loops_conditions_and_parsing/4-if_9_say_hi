@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#task 4
+
+count=1
+while [ $count -le 10 ]
+do
+
+        if [ $count == 9 ]
+        then
+                echo "hi"
+        else
+                echo "Best School"
+        fi
+        ((count++))
+done
