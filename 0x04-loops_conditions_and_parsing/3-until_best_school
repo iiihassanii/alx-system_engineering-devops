@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#task 3
+count=11
+until [ $count == 1 ];
+do
+        echo "Best School"
+        ((count--))
+done
