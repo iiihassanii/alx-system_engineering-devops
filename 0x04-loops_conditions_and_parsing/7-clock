@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#task 7
+hours=0
+minutes=0
+while [ $hours -le 12 ]
+do
+        echo "Hour: $hours"
+        while [ $minutes -le 60 ]
+        do
+                echo $minutes
+                ((minutes++))
+        done
+        minutes=$((0))
+        ((hours++))
+done
