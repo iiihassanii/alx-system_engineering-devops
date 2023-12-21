@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# task 8
+for file in *
+do
+    if [[ $file != .* && $file == *-* ]]
+    then
+        filename=$(echo "$file" | cut -d '-' -f 2-)
+        echo "$filename"
+    fi
+done
