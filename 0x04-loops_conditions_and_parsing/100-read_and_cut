@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#task 100
 while read -r line
 do
         echo "$line" | cut -d ':' -f 1,3,6
