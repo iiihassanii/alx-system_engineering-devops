@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#task 5
+i=$(pidof ./4-to_infinity_and_beyond)
+kill $i
