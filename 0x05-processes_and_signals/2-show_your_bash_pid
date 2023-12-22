@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #task 2
 # shellcheck disable=SC2009
-PID=$!
-echo $PID
+echo $!
