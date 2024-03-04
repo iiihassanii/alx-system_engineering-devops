@@ -3,10 +3,8 @@
 # enable a dedicated PPA with the following command: 
 if ! command -v haproxy &> /dev/null
 then
-        apt-get install --no-install-recommends software-properties-common
-        add-apt-repository ppa:vbernat/haproxy-2.9
-        # install
-        apt-get install -y haproxy=2.9.\*
+    sudo apt-get -y update
+    apt-get -y install haproxy
 fi
 
 # config
