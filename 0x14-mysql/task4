@@ -1,2 +1,9 @@
 cd /etc/mysql/mysql.conf.d/
 sudo vi mysqld.cnf
+
+
+
+READ
+https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql
+GRANT REPLICATION SLAVE ON *.* TO 'holberton_user'@'slave_server_ip' IDENTIFIED BY 'password';
+
