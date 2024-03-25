@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # *get todo where userID = id
     todos = requests.get(url + "todos", {"userId": id}).json()
 
-    name = user.get("name")
+    name = user.get("username")
 
     file_name = "{}.csv".format(id)
     with open(file_name, 'w') as f:
