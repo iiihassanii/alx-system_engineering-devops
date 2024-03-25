@@ -17,7 +17,8 @@ if __name__ == "__main__":
     name = user.get("username")
 
     json_data = {id: [{"task": item['title'],
-                       "completed": item['completed'], "username": name} for item in todos]}
+                       "completed": item['completed'],
+                       "username": name} for item in todos]}
 
     file_name = "{}.json".format(id)
     with open(file_name, 'w') as f:
