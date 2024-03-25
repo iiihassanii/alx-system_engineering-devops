@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """Python script that, using this REST API, for
 a given employee ID, returns information about
- his/her TODO list progress."""
-
+ his/her TO list progress."""
 import requests
 import sys
-import json
+
 
 if __name__ == "__main__":
     id = sys.argv[1]
@@ -18,7 +17,8 @@ if __name__ == "__main__":
 
     done = sum(1 for d in todos if d['completed'])  # Count True values
 
-    print("Employee {} is done with tasks({}/{}):".format(name, done, len(todos)))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(name, done, len(todos)))
     for d in todos:
         if d['completed']:
             print("\t {}".format(d['title']))
